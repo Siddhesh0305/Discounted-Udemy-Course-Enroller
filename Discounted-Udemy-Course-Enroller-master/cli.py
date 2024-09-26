@@ -20,7 +20,6 @@ def check_server_status(url, timeout=10):
             return False
     except requests.exceptions.Timeout:
         print("Request to server timed out.")
-        print("Request to server timed out.")
         return False
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
